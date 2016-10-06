@@ -1,7 +1,10 @@
 ﻿var mssql = require('mssql');
 var db = {};
 var config = {
-  user: user, password: password, server: server IP, database: 'data name'
+  user: "user", 
+  password: "password", 
+  server: "server IP", 
+  database: "data name"
 };
 
 //执行sql,返回数据.  
