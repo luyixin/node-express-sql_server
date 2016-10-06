@@ -1,0 +1,11 @@
+.container.tem1.team.cul
+	.col-xs-3.cul-img
+		img(src='/img/1/2.png')
+		img(src='/img/1/1.png')
+	.col-xs-9.team-info
+		h4 #{active}
+		small #{eng}
+		.cul-content !{content}
+		script
+			| $('.cul-content').html($('.cul-content').text());
+

@@ -1,0 +1,17 @@
+.article
+	ul.tem6
+		each item in content
+			li
+				a(href='/com?id=#{item.ArticleId}')
+					if item.ArticleImg
+						.col-xs-4
+							img(src='#{imgUrl+item.ArticleImg}')
+						.col-xs-8
+							h4 #{item.ArticleTitle}
+							span #{moment(item.AddTime).format('YYYY-MM-DD')}
+							p.ellipsis.ellipsis-5 #{item.ArticleSummy}
+					else
+						.col-xs-12
+							h4 #{item.ArticleTitle}
+							span #{moment(item.AddTime).format('YYYY-MM-DD')}
+							p.ellipsis.ellipsis-5 #{item.ArticleSummy}

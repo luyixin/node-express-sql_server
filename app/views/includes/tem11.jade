@@ -1,0 +1,113 @@
+.panel-group#accordion.person
+	each item,index in content
+		.panel.panel-default
+			.panel-heading
+				.panel-title
+					.col-xs-2 #{item.Tittle}
+					.col-xs-10
+						p
+							span 所属板块：
+							s #{item.Part}
+							span 招聘人数：
+							s #{item.Nums}
+						p
+							span 工作地点：
+							s #{item.WorkPlace}
+							span 工作性质：
+							s #{item.WorkType}
+							span 发布时间：
+							s #{moment(item.LastEditDate).format('YYYY-MM-DD')}
+						a(data-toggle="collapse",data-parent="#accordion",href="#panel#{index+1}") 点击展开
+				.panel-collapse.collapse(id="panel#{index+1}")
+					.panel-body
+						.col-xs-2
+						.col-xs-10 !{item.Contents}
+						script
+							|$('#panel#{index+1} .col-xs-10').html($('#panel#{index+1} .col-xs-10').text());
+	//- .panel.panel-default
+	//- 	.panel-heading
+	//- 		.panel-title
+	//- 			.col-xs-2 项目经理
+	//- 			.col-xs-10
+	//- 				p
+	//- 					span 所属板块：
+	//- 					s 金诚集团
+	//- 					span 招聘人数：
+	//- 					s 1人
+	//- 				p
+	//- 					span 工作地点：
+	//- 					s 杭州
+	//- 					span 工作性质：
+	//- 					s 全职
+	//- 					span 发布时间：
+	//- 					s 2016-07-06
+	//- 				a(data-toggle="collapse",data-parent="#accordion",href="#panel2") 点击展开
+	//- 		.panel-collapse.collapse#panel2
+	//- 			.panel-body
+	//- 				.col-xs-2
+	//- 				.col-xs-10
+	//- 					dl
+	//- 						dt 岗位职责：
+	//- 						dd 1. 安师大撒打啊打啊打啊打算的
+	//- 						dd 2. 安师大撒打啊打啊打啊打算的
+	//- 						dd 3. 安师大撒打啊打啊打啊打算的
+	//- 						dd 4. 安师大撒打啊打啊打啊打算的
+	//- 						dd 5. 安师大撒打啊打啊打啊打算的
+	//- 					dl
+	//- 						dt 任职要求：
+	//- 						dd 1. 安师大撒打啊打啊打啊打算的
+	//- 						dd 2. 安师大撒打啊打啊打啊打算的
+	//- 						dd 3. 安师大撒打啊打啊打啊打算的
+	//- 						dd 4. 安师大撒打啊打啊打啊打算的
+	//- 						dd 5. 安师大撒打啊打啊打啊打算的
+	//- 					dl
+	//- 						dd 感兴趣就联系我们，安师大撒打啊打啊打啊打啊大多数
+	//- 						dd 电话：028-7752538
+	//- 						dd 邮箱：zhuanghuirhuri@gtug.com
+	//- .panel.panel-default
+	//- 	.panel-heading
+	//- 		.panel-title
+	//- 			.col-xs-2 项目经理
+	//- 			.col-xs-10
+	//- 				p
+	//- 					span 所属板块：
+	//- 					s 金诚集团
+	//- 					span 招聘人数：
+	//- 					s 1人
+	//- 				p
+	//- 					span 工作地点：
+	//- 					s 杭州
+	//- 					span 工作性质：
+	//- 					s 全职
+	//- 					span 发布时间：
+	//- 					s 2016-07-06
+	//- 				a(data-toggle="collapse",data-parent="#accordion",href="#panel3") 点击展开
+	//- 		.panel-collapse.collapse#panel3
+	//- 			.panel-body
+	//- 				.col-xs-2
+	//- 				.col-xs-10
+	//- 					dl
+	//- 						dt 岗位职责：
+	//- 						dd 1. 安师大撒打啊打啊打啊打算的
+	//- 						dd 2. 安师大撒打啊打啊打啊打算的
+	//- 						dd 3. 安师大撒打啊打啊打啊打算的
+	//- 						dd 4. 安师大撒打啊打啊打啊打算的
+	//- 						dd 5. 安师大撒打啊打啊打啊打算的
+	//- 					dl
+	//- 						dt 任职要求：
+	//- 						dd 1. 安师大撒打啊打啊打啊打算的
+	//- 						dd 2. 安师大撒打啊打啊打啊打算的
+	//- 						dd 3. 安师大撒打啊打啊打啊打算的
+	//- 						dd 4. 安师大撒打啊打啊打啊打算的
+	//- 						dd 5. 安师大撒打啊打啊打啊打算的
+	//- 					dl
+	//- 						dd 感兴趣就联系我们，安师大撒打啊打啊打啊打啊大多数
+	//- 						dd 电话：028-7752538
+	//- 						dd 邮箱：zhuanghuirhuri@gtug.com
+
+script(src='/js/person.js')
+
+
+
+
+

@@ -1,0 +1,28 @@
+.container.tem1
+	.col-xs-3.menu
+		h4 #{active}
+		small #{eng}
+		ul
+			each item in deces
+				if dec == item.Name
+					li.active
+						a #{item.Name}
+				else
+					li
+						a(href='#{item.ColumnUrl}') #{item.Name}
+	.col-xs-9
+		.cont
+			span 您的位置：
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				li
+					a(href='/contact/person') #{active}
+				li.active #{dec}
+		.article
+			if dec=='人才招聘'
+				include ./tem11
+			else if dec=='留言建议'
+				include ./tem12
+			else
+				include ./tem13

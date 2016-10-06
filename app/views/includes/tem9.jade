@@ -1,0 +1,47 @@
+.container.tem1.copy
+	h4 #{dec}
+	small #{eng}
+	if dec == '版权所有'
+		.content !{content}
+		script
+			| $('.content').html($('.content').text());
+	else
+		.content.map
+			img(src="/img/2/bc1.png")
+			.box
+				.row
+					.col-xs-3
+						.c1.x2
+							a(href='/') 首页
+					.col-xs-6.c2.x1
+						.col-xs-6
+								h4 公司动态
+								a(href='/com/ind') 公司新闻
+								a(href='/com/foc') 行业聚焦
+								a(href='/com/sta') 员工风采
+						.col-xs-6.c2.x1
+								h4 服务项目
+								a(href='/server/inv') 股权投资
+								a(href='/server/cla') 债权投资
+								a(href='/server/acc') 资产管理
+					.col-xs-3
+						.c1.x2
+							a(href='/team') 兴创团队
+				.row.r2
+					.col-xs-3
+						.c2.x3
+							h4 走进兴创
+							a(href='/xing/all') 企业概况
+							a(href='/xing/org') 组织构架
+							a(href='/xing/coo') 合作伙伴
+							a(href='/xing/spe') 领导致辞
+					.col-xs-6.c1.x4
+						h4 联系我们
+						.row.text-center
+							a(href='/contact/person') 人才招聘
+							a(href='/contact/suggest') 留言建议
+							a(href='/contact/mode') 联系方式
+					.col-xs-3
+						.c2.x2
+							a(href='/culture') 企业文化
+

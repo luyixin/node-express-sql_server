@@ -1,0 +1,47 @@
+.container.tem1
+	.col-xs-3.menu
+		h4 #{active}
+		small #{eng}
+		ul
+			each item in deces
+				if dec == item.Name
+					li.active
+						a #{item.Name}
+				else
+					li
+						a(href='#{item.ColumnUrl}') #{item.Name}
+	.col-xs-9
+		.cont
+			span 您的位置：
+			ol.breadcrumb
+				li
+					a(href='/') 首页
+				if (!det)
+					li
+						a(href='#{link}') #{active}
+					li.active #{dec}
+				else
+					li
+						a(href='#{link}') #{active}
+					li
+						a(href='#{decLink}') #{dec}
+					li.active #{content.ArticleTitle}
+		if (!det)
+			include ./tem3
+		else
+			.article !{content.ArticleContent}
+			.foot
+				if prev
+					a.left(href="/server?id=#{prev.ArticleId}") 上一条：#{prev.ArticleTitle}
+				else
+					a.left(href="javascript:;") 上一条：没有了
+				if next
+					a.right(href="/server?id=#{next.ArticleId}") 下一条：#{next.ArticleTitle}
+				else
+					a.right(href="javascript:;") 下一条：没有了
+			script
+				| $('.article').html($('.article').text());
+
+
+
+

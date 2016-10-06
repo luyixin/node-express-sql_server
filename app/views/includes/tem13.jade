@@ -1,0 +1,28 @@
+.embed-responsive.embed-responsive-16by9
+	iframe.embed-responsive-item(src='/contact/map',scrolling="no")
+.row.list
+	.col-xs-3
+		.thumbnail
+			img(src='/img/2/7.png')
+			.caption
+				h4 公司地址
+				p #{content.Address}
+	.col-xs-3
+		.thumbnail
+			img(src='/img/2/8.png')
+			.caption
+				h4 公司电话
+				p 联系电话：#{content.Tel}
+	.col-xs-3
+		.thumbnail
+			img(src='/img/2/6.png')
+			.caption
+				h4 电子邮箱
+				p #{content.Email}
+	.col-xs-3
+		.thumbnail
+			img(src='/img/2/5.png')
+			.caption
+				h4 联系QQ
+				each item in QQArr
+					p #{item}

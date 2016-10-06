@@ -1,0 +1,41 @@
+include ./layout
+.container.info
+	.col-xs-4
+		.head
+			span.s1 #{def[2].Name}
+			span.s2 #{def[2].EnglishName}
+			span.right.s3 
+				a(href='#{def[2].ColumnUrl}') MORE &nbsp;&gt;&gt;
+		ul.col-xs-12.list
+			each item in news
+				if item.IsTop
+					li
+						a(href='/com?id=#{item.ArticleId}')
+							.col-xs-4.img-box
+								img(src='#{imgUrl+item.ArticleImg}')
+							.col-xs-8.img-msg
+								h5 #{item.ArticleTitle}
+								p.ellipsis.ellipsis-3 #{item.ArticleSummy}
+				else
+					li
+						a.col-xs-9.ellipsis.ellipsis-1(href='/com?id=#{item.ArticleId}') #{item.ArticleTitle}
+						span.col-xs-3 #{moment(item.AddTime).format('YYYY-MM-DD')}
+	.col-xs-4
+		.head
+			span.s1 #{def[4].Name}
+			span.s2 #{def[4].EnglishName}
+			span.right.s3 
+				a(href='#{def[4].ColumnUrl}') MORE &nbsp;&gt;&gt;
+		ul.col-xs-12.img-list
+			each item,index in pro
+				li.col-xs-4
+					img(src='/img/5/#{3+index}.png')
+					h5.list-title #{item.Name}
+					p.ellipsis.ellipsis-2 #{item.Description}
+	.col-xs-4
+		.head
+			span.s1 成功案例
+			span.s2 SUCCESSFUL CASE
+			span.right.s3 
+				a(href='#{def[4].ColumnUrl}') MORE &nbsp;&gt;&gt;
+		img.big(src='/img/5/6.png')

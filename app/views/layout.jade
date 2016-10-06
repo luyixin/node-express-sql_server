@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		include ./includes/link
+		if active=='首页' && !dec
+			link(href="/libs/swiper/swiper.min.css", rel="stylesheet")
+			link(href="/css/index.css", rel="stylesheet")
+		else
+			link(href="/css/tem.css", rel="stylesheet")
+		if active=='兴创团队'
+			link(href="/libs/swiper/swiper.min.css", rel="stylesheet")
+		mate(charset='utf-8')
+		meta(name="keywork", content="川商投兴创")
+		title 川商投兴创
+	body
+		include ./includes/public

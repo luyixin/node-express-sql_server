@@ -1,0 +1,92 @@
+/*主页样式*/
+
+.info {
+	margin-top: 10px;
+}
+
+.info .head span {
+	line-height: 40px;
+	margin-right: 10px;
+}
+
+.info span.s1 {
+	font-size: 20px;
+	color: rgb(190, 150, 70);
+}
+
+.info span.s2 {
+	font-size: 14px;
+	color: #ccc;
+}
+
+.info span.s3 > a {
+	font-size: 12px;
+	color: rgb(190, 150, 70);
+}
+
+.info .img-box {
+	margin-top: 10px;
+	padding: 0;
+}
+
+.info .img-box img {
+	width: 100%;
+}
+
+.info .img-msg p {
+	font-size: 12px;
+	color: #666;
+	
+}
+
+
+.info .list, .info .list li a, .info .list li span {
+	padding: 0;
+	list-style: none;
+	margin-right: 0;
+}
+
+.info .list li {
+	line-height: 24px;
+}
+
+.info .list li a {
+	color: #333;
+	font-size: 12px;
+}
+
+.info .list li span {
+	text-align: right;
+	font-size: 12px;
+}
+
+
+.info .img-list, .info .img-list > li {
+	padding: 0;
+	list-style: none;
+}
+
+.info .img-list > li img {
+	width: 100%;
+}
+
+.info .img-list > li h5 {
+	padding-left: 10px;
+	border-left: 5px solid rgb(190, 150, 70);
+}
+
+.info .img-list > li p {
+	font-size: 12px;
+	padding-right: 10px;
+	line-height: 20px;
+}
+
+.info .img-list > li:last-child p{
+	padding-right: 0;
+}
+
+.info img.big {
+	width: 100%;
+}
+/*主页完*/
+

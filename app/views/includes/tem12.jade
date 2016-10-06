@@ -1,0 +1,18 @@
+form.form-horizontal.sug(method="post", action="/suggest/new")
+	.form-group
+		label.col-sm-2.control-label(for="name") 联系人：
+		.col-sm-10
+			input.form-control#name(type="text", name="formData[name]", placeholder="请填写您的姓名")
+	.form-group
+		label.col-sm-2.control-label(for="tel") 联系方式：
+		.col-sm-10
+			input.form-control#tel(type="text", name="formData[tel]", placeholder="请填写您的手机号码")
+	.form-group
+		label.col-sm-2.control-label(for="cont") 留言内容：
+		.col-sm-10
+			textarea.form-control#cont(rows="4", name="formData[cont]", placeholder="请填写留言内容", style="resize:none")
+	.form-group
+		.col-sm-10.col-sm-offset-2
+			button.btn.btn-default.sub(type="submit") 确认提交
+			button.btn.btn-default(type="button", onclick="document.querySelector('form.form-horizontal').reset()") 重置清空
+script(src='/js/sub.js')

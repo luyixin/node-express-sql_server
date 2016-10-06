@@ -1,0 +1,508 @@
+.tem1 {
+	border: 1px solid #ccc;
+	margin-top: -30px;
+	background-color: #fff;
+	position: relative;
+}
+
+.tem1 .menu h4 {
+	font-size: 22px;
+	margin-top: 20px;
+}
+
+.tem1 .menu small {
+	padding-bottom: 4px;
+	color: rgb(190, 150, 70);
+	border-bottom: 2px solid #ccc;
+	display: block;
+	width: 100%;
+}
+
+.tem1 .menu ul {
+	margin: 15px auto;
+	width: 100%;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #ccc;
+}
+
+.tem1 .menu ul li a {
+	display: inline-block;
+	width: 100%;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+}
+.tem1 .menu ul li:last-child a {
+	border-bottom: none;
+}
+
+.tem1 .menu ul li.active a {
+	background-color: rgb(190, 150, 70);
+	color: #fff;
+}
+
+.tem1 .col-xs-9 {
+	border-left: 1px solid #ccc;
+}
+
+.tem1 .cont {
+	margin-top: 45px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 10px;
+}
+
+.tem1 .cont .breadcrumb {
+	display: inline;
+	background-color: inherit;
+	border-radius: 0;
+}
+
+.tem1 .cont .breadcrumb>li+li:before {
+	padding: 0 10px;
+	content: ">";
+}
+
+.tem1 .article {
+	padding-top: 15px;
+}
+
+.tem2 {
+	list-style: none;
+	padding: 0;
+}
+
+.tem2 .col-xs-4 {
+	padding: 0;
+}
+
+.tem2 li {
+	margin: 0 15px;
+	padding: 15px 0;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+.tem2 li:last-child {
+	border-bottom: none;
+}
+
+.tem2 li h4 {
+	color: rgb(190, 150, 70);
+}
+
+.tem2 li img {
+	width: 100%;
+}
+
+.tem2 li p {
+	line-height: 30px;
+}
+
+.tem2 li a {
+	border-radius: 0;
+	background-color: rgb(190, 150, 70);
+	color: #fff;
+	font-size: 12px;
+}
+
+.tem2 li a:hover {
+	color: rgb(190, 150, 70);
+}
+
+
+.img-box {
+	margin-top: 15px;
+	overflow: hidden;
+}
+.img-box .col-xs-3 {
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+.tem6 {
+	list-style: none;
+	padding: 0;
+}
+
+.tem6 li h4 {
+	color: rgb(190, 150, 70);
+	font-size: 16px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.tem6 li img {
+	width: 100%;
+}
+
+.tem6 li {
+	padding: 15px 0;
+	overflow: hidden;
+	border-bottom: 1px dotted #ccc;
+	position: relative;
+}
+
+.tem6 li .col-xs-4 {
+	padding-left: 0;
+}
+
+.tem6 li .col-xs-8 {
+	padding-right: 0;
+}
+
+.tem6 li:last-child {
+	border-bottom: none;
+}
+
+.tem6 li p {
+	font-size: 12px;
+	color: #333;
+}
+
+.tem6 li span {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	font-size: 10px;
+	color: #333;
+}
+
+.team {
+	padding: 15px;
+}
+.team .col-xs-3  {
+	padding: 0;
+}
+
+.team .team-info  {
+	border-left: none;
+}
+
+.team .team-info h4 {
+	margin-bottom: 5px;
+}
+
+.team .team-info small {
+	color: rgb(190, 150, 70);
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+.team img {
+	width: 100%;
+}
+
+.team .banner {
+	margin-top: 20px;
+	padding: 10px 50px;
+	position: relative;
+}
+
+.team .swiper-button-prev {
+	left: 20px;
+}
+
+.team .swiper-button-next {
+	right: 20px;
+}
+
+.team .swi {
+	position: static;
+}
+
+.team .swiper-slide {
+	padding: 0 10px;
+}
+
+.team p.person {
+	font-size: 12px;
+	margin-top: 10px;
+	text-indent: 2em;
+	line-height: 22px;
+}
+
+.team .banner .swiper-slide a {
+	display: block;
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+}
+
+.team .banner .swiper-slide a h5 {
+	font-size: 16px;
+	color: rgb(190, 150, 70);
+	text-align: center;
+}
+
+.team .banner .swiper-slide a p {
+	font-size: 12px;
+	color: #333;
+}
+
+.cul .cul-img img:last-child {
+	margin-top: 10px;
+}
+
+.cul .cul-content {
+	padding: 15px;
+}
+
+.copy h4{
+margin-top: 20px;
+	font-size: 16px;
+}
+
+.copy small {
+	color: rgb(190, 150, 70);
+	display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+.copy .content {
+	padding: 15px 0;
+}
+
+.person .panel.panel-default{
+	border-radius: 0;
+	border: none;
+}
+.person .panel-heading {
+	padding: 10px 0;
+	background-color: rgb(238, 238, 238);
+}
+
+.person .panel-heading p {
+	line-height: 25px;
+	margin-bottom: 0;
+	font-size: 12px;
+}
+
+.person .panel-heading p span {
+	margin-left: 20px;
+}
+.person .panel-heading p s {
+	margin-right: 20px;
+	width: 80px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.person .panel-title {
+	overflow: hidden;
+	line-height: 50px;
+}
+
+.person .panel-title .col-xs-2 {
+	text-align: center;
+}
+
+.person .panel-title .col-xs-10 {
+	border-left: 1px solid #ccc;
+	position: relative;
+}
+
+.person .col-xs-10 a {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	color: #fff;
+	line-height: 30px;
+	width: 80px;
+	text-align: center;
+	background-color: rgb(135, 135, 135);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.person .panel-body {
+	padding: 0;
+}
+.person .panel-body .col-xs-10 {
+	border-left: 1px solid #ccc;
+	padding-top: 10px;
+	padding-left: 35px;
+}
+
+.sug {
+	margin-bottom: 50px;
+}
+
+.sug input, .sug textarea{
+	border-radius: 0;
+	font-size: 12px;
+}
+
+.sug button {
+	font-size: 12px;
+	border-radius: 0;
+	margin-right: 20px;
+	color: #fff;
+}
+
+
+.sug button[type='submit'] {
+	background-color: rgb(186, 151, 57);
+}
+
+.sug button[type='button'] {
+	background-color: rgb(135, 135, 135);
+}
+
+.sug button[type='submit']:hover {
+	color: rgb(186, 151, 57);
+	background-color: #fff;
+}
+
+.sug button[type='button']:hover {
+	color: rgb(135, 135, 135);
+	background-color: #fff;
+}
+
+.list {
+	margin-top: 20px;
+}
+
+.list .thumbnail {
+	padding: 20px 0;
+	border-radius: 0;
+	border: none;
+	background-color: rgb(238, 240, 240);
+}
+
+.list .thumbnail img {
+	margin-top: 10px;
+}
+
+.list .thumbnail h4 {
+	text-align: center;
+	font-size: 14px;
+	margin: 20px;
+}
+
+.list .thumbnail p {
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+}
+
+.map {
+	position: relative;
+}
+
+.map img {
+	width: 100%;
+}
+
+.map .box {
+	width: 96%;
+	height: 86%;
+	position: absolute;
+	top: 7%;
+	left: 2%;
+	overflow: hidden;
+}
+
+.map .box .c1 {
+	background-color: rgb(83, 83, 83);
+	height: 220px;
+}
+
+.map .box .r2 {
+	margin-top: 10px;
+}
+
+.map .box .c2 {
+	background-color: rgb(186, 151, 57);
+	height: 220px;
+}
+
+.map .box .x1 a,.map .box .x2 a,.map .box .x1 a:hover,.map .box .x2 a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.map .box .x2 a {
+	display: inline-block;
+	width: 100%;
+	line-height: 220px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.map .box .x1 a {
+	display: block;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 40px;
+	background-color: rgb(129, 105, 43);
+	font-size: 12px;
+}
+
+
+
+.map .box .x3 h4 {
+	padding-top: 25px;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 auto 20px;
+	text-align: center;
+}
+
+
+.map .box .x3 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	display: block;
+	text-align: center;
+	line-height: 25px;
+	margin: 10px 40px;
+	background-color: rgb(129, 105, 43);
+}
+
+.map .box .x4 h4 {
+	padding: 70px 0 20px;
+	color: #fff;
+	font-size: 20px;
+	margin: 0;
+	text-align: center;
+}
+
+.map .box .x4 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 30px;
+	padding: 0 20px;
+	margin-right: 20px;
+	background-color: rgb(129, 105, 43);
+}
+
+.map .box .x4 a:last-child {
+	margin-right: 0;
+}
+
+.map .box .x1 h4 {
+	color: #fff;
+	font-size: 20px;
+	margin: 30px auto 20px;
+	text-align: center;
+}
+
+.foot {
+	padding: 10px 0;
+}
+
+.foot a {
+	font-size: 12px;
+}
+
+

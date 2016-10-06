@@ -1,0 +1,32 @@
+.container.tem1.team
+	.col-xs-3
+		img(src='/img/6/1.png')
+	.col-xs-9.team-info
+		h4 #{active}
+		small #{eng}
+		.banner
+			.swiper-container.swi
+				.swiper-wrapper(role="tablist")
+					each item,index in content
+						.swiper-slide(role="presentation")
+							a(href='#tab#{index+1}',role="tab",data-toggle="tab",aria-controls="tab#{index+1}")
+								img(src='#{imgUrl+item.ArticleImg}')
+								h5 #{item.ArticleTitle}
+								p.ellipsis.ellipsis-2 #{item.ArticleSummy}
+
+				.swiper-button-prev
+				.swiper-button-next
+
+		.tab-content
+			each item,index in content
+				unless index
+					p.person.tab-pane.active(role="tabpanel" id="tab#{index+1}") !{item.ArticleContent}
+					script
+						| $('#tab#{index+1}').html($('#tab#{index+1}').text());
+				else
+					p.person.tab-pane(role="tabpanel" id="tab#{index+1}") !{item.ArticleContent}
+					script
+						| $('#tab#{index+1}').html($('#tab#{index+1}').text());
+
+script(src="/libs/swiper/swiper-jq.min.js")
+script(src="/js/tem7.js")

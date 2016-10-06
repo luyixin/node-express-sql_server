@@ -1,0 +1,17 @@
+.article
+	ul.tem2
+		each item in content
+			li
+				if item.ArticleImg
+					.col-xs-4
+							img(src='#{imgUrl+item.ArticleImg}')
+						.col-xs-8
+							h4 #{item.ArticleTitle}
+							p.ellipsis.ellipsis-5 #{item.ArticleSummy}
+							a.btn.btn-default.right(type='buuton',href='/server?id=#{item.ArticleId}') 查看详情
+				else
+					.col-xs-12
+							h4 #{item.ArticleTitle}
+							p.ellipsis.ellipsis-5 #{item.ArticleSummy}
+							a.btn.btn-default.right(type='buuton',href='/server?id=#{item.ArticleId}') 查看详情
+

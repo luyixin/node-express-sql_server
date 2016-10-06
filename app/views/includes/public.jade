@@ -1,0 +1,64 @@
+.container
+  nav.navbar.navbar-default.bar
+    a.navbar-brand.logo-img(href='/')
+      img(src='/img/banner/0.png')
+    a.navbar-brand.logo-msg(href='/') 川商投兴创
+    ul.nav.navbar-nav.pull-right
+      each item,index in def
+        if active == item.Name
+          li.active
+            a #{item.Name}
+        else
+          li
+            a(href='#{item.ColumnUrl}') #{item.Name}
+        if index != def.length-1
+          li
+            span.sline |
+      
+if active == '首页' && dec != '网站地图' && dec != '版权所有'
+  .swiper-container
+    .swiper-wrapper
+      each item in banner
+        .swiper-slide
+          img(src='#{imgUrl + item.ArticleImg}')
+    .swiper-pagination
+
+if dec == '网站地图' || dec == '版权所有'
+  img.bc(src='/img/banner/1.png')
+if active == '服务项目'
+  img.bc(src='/img/banner/2.png')
+if active == '走进兴创'
+  img.bc(src='/img/banner/3.jpg')
+if active == '公司动态'
+  img.bc(src='/img/banner/6.png')
+if active == '兴创团队'
+  img.bc(src='/img/banner/7.png')
+if active == '企业文化'
+  img.bc(src='/img/banner/5.png')
+if active == '联系我们'
+  img.bc(src='/img/banner/4.png')
+
+footer.footer
+  .container
+    span Copyright © 2016-2020 All Rights Reserved
+    ul.nav.navbar-nav.pull-right
+      li
+        a(href='/contact/person') 联系我们
+      li
+        a(href='/copyright') 版权所有
+      li
+        //- a(href='tencent://message/?uin=1761051993&Site=qq客服&Menu=yes') 在线咨询
+        a(href='#') 在线咨询
+      li
+        a(href='/map') 网站地图
+if active == '首页'
+  script(src="/libs/swiper/swiper-jq.min.js")
+  script(src="/js/index.js")
+
+
+
+
+
+
+
+
